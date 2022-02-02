@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+	<display-name>open-liberty-security-verify-config</display-name>
+
+	<servlet>
+		<servlet-name>application.rest.JaxrsApplication</servlet-name>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>application.rest.JaxrsApplication</servlet-name>
+		<url-pattern>/auth/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>application.redirect.RedirectApplication</servlet-name>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>application.redirect.RedirectApplication</servlet-name>
+		<url-pattern>/app/*</url-pattern>
+	</servlet-mapping>
+
+	<security-role>
+		<role-name>developers</role-name>
+	</security-role>
+
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>Examples</web-resource-name>
+			<url-pattern>/auth/*</url-pattern>
+			<http-method>GET</http-method>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>developers</role-name>
+		</auth-constraint>
+	</security-constraint>
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
