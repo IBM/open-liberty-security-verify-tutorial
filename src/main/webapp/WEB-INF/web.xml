@@ -3,10 +3,11 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 	version="2.5">
-	<display-name>open-liberty-security-verify-config</display-name>
+	<display-name>open-liberty-security-verify-tutorial</display-name>
 
 	<servlet>
 		<servlet-name>application.rest.JaxrsApplication</servlet-name>
+		<servlet-class>application.rest.JaxrsApplication</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>application.rest.JaxrsApplication</servlet-name>
@@ -15,6 +16,7 @@
 
 	<servlet>
 		<servlet-name>application.redirect.RedirectApplication</servlet-name>
+		<servlet-class>application.redirect.RedirectApplication</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>application.redirect.RedirectApplication</servlet-name>

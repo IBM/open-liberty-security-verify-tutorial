@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>projects</groupId>
-	<artifactId>open-liberty-security-verify-config</artifactId>
+	<artifactId>open-liberty-security-verify-tutorial</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>war</packaging>
 
@@ -48,13 +48,13 @@
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
 			<artifactId>junit-jupiter</artifactId>
-			<version>5.7.2</version>
+			<version>5.8.2</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.cxf</groupId>
 			<artifactId>cxf-rt-rs-client</artifactId>
-			<version>3.4.3</version>
+			<version>3.5.0</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
@@ -71,7 +71,7 @@
 		<dependency>
 			<groupId>org.json</groupId>
 			<artifactId>json</artifactId>
-			<version>20210307</version>
+			<version>20211205</version>
 		</dependency>
 	</dependencies>
 
