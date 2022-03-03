@@ -1,7 +1,7 @@
 <server description="Sample Liberty server">
 
 	<featureManager>
-		<feature>microProfile-4.0</feature>
+		<feature>microProfile-4.1</feature>
 		<feature>webProfile-8.0</feature>
 		<feature>appSecurity-3.0</feature>
 		<feature>openidConnectClient-1.0</feature>
